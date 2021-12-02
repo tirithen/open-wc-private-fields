@@ -43,7 +43,11 @@
     "extends": [
       "@open-wc",
       "prettier"
-    ]
+    ],
+    "parserOptions": {
+      "ecmaVersion": "latest",
+      "sourceType": "module"
+    }
   },
   "prettier": {
     "singleQuote": true,
