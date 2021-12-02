@@ -59,11 +59,12 @@ export class TestApp extends LitElement {
   constructor() {
     super();
     this.title = 'My app';
-    this.#testproperty = 'Updated value'
+    this.#testproperty = 'Updated value';
   }
 
   #testmethod() {
-    console.log("logging from private method");
+    // eslint-disable-next-line no-console
+    console.log('logging from private method', this.#testproperty);
   }
 
   render() {
